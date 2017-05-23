@@ -128,17 +128,16 @@ li a:hover:not(.active){
 	font-size: 15px;
 	padding: 10px;
 	border-radius: 10px;
-	border: 0px;
+	border: 0;
+	border-bottom: 1px;
 	margin-bottom: 10px;
 }
 
 .become-driver{
 	color: #EDE9E2;
 	background-color: #E54E79;
-	border-left: none;
-	border-right: none;
-	border-top: none;
-	border-bottom: 2px gray;
+	border: 0;
+	border-radius: 10px;
 	padding: 15px;
 	width: 190px;
 	box-shadow: 3px 5px 12px -3px rgba(0,0,0,0.75);
@@ -168,7 +167,7 @@ li a:hover:not(.active){
 	background-color: #EDE9E2;
 	margin: 60px 250px 40px 250px;
 	text-align: center;
-	height: 250px;
+	height: 200px;
 }
 
 .fa-car{
@@ -194,7 +193,7 @@ li a:hover:not(.active){
 }
 
 .jugar{
-	margin-top: 60px;
+	margin-top: 40px;
 	margin-bottom: 20px;
 	color: #EDE9E2;
 	background-color: #00B2A9;

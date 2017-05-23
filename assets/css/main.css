@@ -77,12 +77,13 @@ li a{
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 10px 16px;
 	text-decoration: none;
 }
 
 li a:hover:not(.active){
 	background-color: #ff7673;
+
 }
 
 .active{
@@ -127,9 +128,8 @@ li a:hover:not(.active){
 	background-color: #EDE9E2;
 	font-size: 15px;
 	padding: 10px;
-	border-radius: 10px;
 	border: 0;
-	border-bottom: 1px;
+	border-bottom: 1px solid #615f5f;
 	margin-bottom: 10px;
 }
 
@@ -140,7 +140,7 @@ li a:hover:not(.active){
 	border-radius: 10px;
 	padding: 15px;
 	width: 190px;
-	box-shadow: 3px 5px 12px -3px rgba(0,0,0,0.75);
+	box-shadow: 3px 5px 12px -3px rgba(0,0,0,0.50);
 }
 
 .apllied, .earn-money{
@@ -174,23 +174,21 @@ li a:hover:not(.active){
 	color: #75726C;
 }
 
-.x{
+.x, .y{
 	color: #75726C;
 	margin-top: 40px;
-	border: 0px;
-	border-radius: 10px;
-	padding: 15px;
+	border: 0;
+	border-bottom: 1px solid #615f5f;
+	padding: 5px;
 	width: 290px;
+	background-color: #EDE9E2;
+	font-size: 15px;
 }
-
-.y{
-	color: #75726C;
-	margin-top: 40px;
-	border: 0px;
-	border-radius: 10px;
-	padding: 15px;
-	width: 290px;
+/*
+.x:visited(.active), .y:visited(.active){
+    border-bottom: 2px solid #00B2A9;
 }
+*/
 
 .jugar{
 	margin-top: 40px;
@@ -199,13 +197,53 @@ li a:hover:not(.active){
 	background-color: #00B2A9;
 	border: 0px;
 	border-radius: 10px;
-	padding: 15px;
+	padding: 10px;
 	width: 700px;
-	box-shadow: 3px 5px 12px -3px rgba(0,0,0,0.75);
+	box-shadow: 3px 5px 12px -3px rgba(0,0,0,0.50);
+}
+
+.jugar:hover{
+    background-color: #5cd4ce;
+    box-shadow: none;
+}
+
+.start{
+	font-size: 20px;
 }
 
 footer{
 	color: #EDE9E2;
 	background-color: #75726C;
-	padding: 30px;
+	height: 150px;
+	background-color: gray;
+	margin: 0;
+}
+
+.proyecto{
+	display: inline-block;
+	margin-top: 30px;
+	margin-left: 180px;
+}
+
+h3{
+	font-weight: bolder;
+	margin-top: 20px;
+}
+
+.sprint-alumna{
+	float: left;
+}
+
+.social{
+	float: right;
+	margin-top: 20px;
+	text-decoration: none;
+	color: #EDE9E2;
+	padding: 10px;
+	margin-left: 100px;
+	font-size: 40px;
+}
+
+.social:hover{
+	color: #404040;
 }

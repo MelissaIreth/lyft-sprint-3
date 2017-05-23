@@ -1,53 +1,209 @@
 /*
 Colors: 
-#E54E79;
-#E56385;
-#00B2A9;
-#75726C;
-#EDE9E2
+#E54E79; rosado fuerte
+#E56385; rosado claro
+#00B2A9; celeste
+#75726C; gris
+#EDE9E2; blanco
 */
+
+*{
+	font-family: 'Ralewey', sans-serif;
+}
+
 body{
 	background-color: #00B2A9;
 	margin: 0;
+	padding: 0;
 }
 
 nav{
 	background-color: #E56385;
-	margin: 0 auto 0 auto;
-	padding: 5px;
-	height: 55px;
-	width: 2000px;
+	height: 65px;
+	width: 1300px;
 	position: fixed;
 }
-
+.logo{
+	position: absolute;
+	margin: 0 200px auto 150px;
+	height: 40px
+}
+.logo img{ 
+	width: 70px;
+	max-width: 20%;
+	margin: 0 0 0 200px;
+	padding: 10px;
+}
+/*
 ul{
+	display: inline-block;
+	position: absolute;
 	list-style: none;
-	margin: 0;
+	margin-left: 700px;
 	padding: 0;
-	font-family: 'Ralewey', sans-serif;
+	overflow: hidden;
 }
 
 ul li{
-	display: inline-block;
+	float: right;
 }
 
 ul li a{
 	display: inline-block;
 	color: white;
-	padding: 25px;
+	padding: 12px 16px 12px 16px;
+	text-decoration: none;
+	font-weight: 100;
+}
+
+li a:hover:not(.active){
+	background-color: #E54E79;
+}
+*/
+
+ul{
+	list-style-type: none;
+	margin: -59px 0 auto 700px;
+	padding: 0;
+	overflow: hidden;
+}
+
+li{
+	float: left;
+}
+
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
 	text-decoration: none;
 }
 
-.logo img { 
-	width: 70px;
-	max-width: 20%;
-	margin: 0 auto 0 200px;
-	padding: 5px;
+li a:hover:not(.active){
+	background-color: #ff7673;
+}
+
+.active{
+	background-color: #E54E79;
+}
+
+
+.img-fondo img{
+	max-width: 100%;
+	margin: 0;
 }
 
 .img-fondo{
-	background-image: url(../img/cropped-Lyft-Promo-Codes-car-1.jpg);
-	width: 2000px;
-	height: 1104px;
-	max-width: 100%;
+}
+
+.cajita-blanca{
+	width: 507px;
+	height: 400px;
+	background-color: #EDE9E2;
+	padding: 30px;
+}
+
+.turn-miles{
+	color: #00B2A9; 
+	padding-top: 20px;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+.sign-up{
+	color: #75726C;
+}
+
+.number{
+	width: 90%;
+	height: 25px;
+	color: #4E4D53;
+	background-color: #EDE9E2;
+	font-size: 15px;
+	padding: 10px;
+	border-radius: 10px;
+	border: 0px;
+	margin-bottom: 10px;
+}
+
+.become-driver{
+	color: #EDE9E2;
+	background-color: #E54E79;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 2px gray;
+	padding: 15px;
+	width: 190px;
+	box-shadow: 3px 5px 12px -3px rgba(0,0,0,0.75);
+}
+
+.apllied{
+	color: #75726C;
+}
+
+.earn-money{
+	color: #75726C;
+}
+
+.playwl{
+	margin-top: 20px;
+	font-size: 60px;
+	color: #75726C;
+	text-align: center;
+	font-weight: bolder;
+}
+
+.play-with{
+	padding-top: 1px;
+	padding-bottom: 3px;
+	background-color: #EDE9E2;
+	height: 100px;
+}
+
+.coordenadas{
+	background-color: #EDE9E2;
+	margin: 60px 250px 40px 250px;
+	text-align: center;
+	height: 250px;
+}
+
+.x{
+	color: #75726C;
+	margin-top: 40px;
+	border: 0px;
+	border-radius: 10px;
+	padding: 15px;
+	width: 290px;
+}
+
+.y{
+	color: #75726C;
+	margin-top: 40px;
+	border: 0px;
+	border-radius: 10px;
+	padding: 15px;
+	width: 290px;
+}
+
+.jugar{
+	margin-top: 60px;
+	margin-bottom: 20px;
+	color: #EDE9E2;
+	background-color: #00B2A9;
+	border: 0px;
+	border-radius: 10px;
+	padding: 15px;
+	width: 700px;
+}
+
+footer{
+	color: #EDE9E2;
+	background-color: #75726C;
+	padding: 30px;
+}
+
+.me{
+	float: right;
 }

@@ -22,6 +22,7 @@ nav{
 	height: 65px;
 	width: 1300px;
 	position: fixed;
+	z-index: 9999;
 }
 .logo{
 	position: absolute;
@@ -95,18 +96,22 @@ li a:hover:not(.active){
 }
 
 .img-fondo{
+	position: relative;
 }
 
 .cajita-blanca{
-	width: 507px;
-	height: 400px;
+	width: 450px;
+	height: 370px;
 	background-color: #EDE9E2;
 	padding: 30px;
+	position: absolute;
+	top: 200px;
+	right: 0;
 }
 
 .turn-miles{
 	color: #00B2A9; 
-	padding-top: 20px;
+	padding-top: 10px;
 	font-size: 30px;
 	font-weight: bolder;
 }
@@ -139,11 +144,7 @@ li a:hover:not(.active){
 	box-shadow: 3px 5px 12px -3px rgba(0,0,0,0.75);
 }
 
-.apllied{
-	color: #75726C;
-}
-
-.earn-money{
+.apllied, .earn-money{
 	color: #75726C;
 }
 
@@ -156,6 +157,7 @@ li a:hover:not(.active){
 }
 
 .play-with{
+	margin-top: 50px;
 	padding-top: 1px;
 	padding-bottom: 3px;
 	background-color: #EDE9E2;
@@ -167,6 +169,10 @@ li a:hover:not(.active){
 	margin: 60px 250px 40px 250px;
 	text-align: center;
 	height: 250px;
+}
+
+.fa-car{
+	color: #75726C;
 }
 
 .x{
@@ -196,14 +202,11 @@ li a:hover:not(.active){
 	border-radius: 10px;
 	padding: 15px;
 	width: 700px;
+	box-shadow: 3px 5px 12px -3px rgba(0,0,0,0.75);
 }
 
 footer{
 	color: #EDE9E2;
 	background-color: #75726C;
 	padding: 30px;
-}
-
-.me{
-	float: right;
 }

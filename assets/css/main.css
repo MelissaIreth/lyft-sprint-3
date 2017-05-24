@@ -179,6 +179,7 @@ li a:hover:not(.active){
 	height: 200px;
 }
 
+
 .fa-car{
 	color: #75726C;
 }
@@ -219,8 +220,8 @@ li a:hover:not(.active){
 .start{
 	font-size: 20px;
 }
-/*
-#tablero{
+
+.el-tablero{
   border: 5px solid #900C3F;
 }
 
@@ -235,7 +236,7 @@ li a:hover:not(.active){
   text-align: center;
   border: 5px #900C3F solid;
 }
-*/
+
 footer{
 	color: #EDE9E2;
 	background-color: #75726C;

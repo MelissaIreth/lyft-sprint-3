@@ -5,88 +5,55 @@ function validarTelefono(){
 		var input = document.getElementById('phone').value;
 		
 		if( !(/^\d{9}$/.test(input)) ){
-			alert("You must add your phone number");
+			alert("You must add your phone number, 9 digits");
 		}else{
 			alert("Ready to drive!");
+			document.getElementById('phone').value = "";
 		}
 	});
 }
 
 validarTelefono();
 
-//Tablero y auto
 
+//
+
+
+function cambiar(){
 var tablero = [
-[0,0,0,0,0,0,0,0,0,0],
-[0,0,0,0,0,0,0,0,0,0],
-[0,0,0,0,0,0,0,0,0,0],
-[0,0,0,0,0,0,0,0,0,0],
-[0,0,0,0,0,0,0,0,0,0],
-[0,0,0,0,0,0,0,0,0,0]
-]
-/*
+["","","","","","","","","",""],
+["","","","","","","","","",""],
+["","","","","","","","","",""],
+["","","","","","","","","",""],
+["","","","","","","","","",""],
+["","","","","","","","","",""]
+];
 
-var cooX = document.getElementsByClassName("x")[0];
-var cooY = document.getElementsByClassName("y")[0];
-var divT = document.getElementById("tablero");
-
-tablero[cooX][cooY]= "Auto"
-
-var linea;
-var cuadrito;
-
-for(var i=0; i<tablero.length; i++){
-	linea = document.createElement("div");
-	linea.classList.add("linea")
-
-	for(var j=0; j<tablero[i].length; j++){
-		cuadrito.innerHTML = tablero[i][j];
-		cuadrito.classList.add("cuadrito")
-		linea.appendChild(cuadrito);
-	}
-	divT.appendChild(linea)
-}
-
-var start = document.getElementsByClassName("jugar")[0]
-start.addEventListener("click", function(){
-
-})
-
-
-/*
-(function cambiarBotonporCaja(){
-    var AllPandas = Array.from(document.querySelectorAll(".pandas span"));
-    var div = Array.from(document.querySelectorAll('.pandita div'))
-
-    var start = document.getElementById("jugar");
-    start.addEventListener("click", function(){
-        AllPandas.forEach(function(e){
-            e.parentElement.classList.remove("nada");
-        });        
-    });
-
-
-    AllPandas.forEach(function(e){
-        e.addEventListener("click", function(){
-            console.log(e);
-            this.parentElement.classList.add("nada");
-        });
-    });
-
-})()
-*/
-var section = document.createElement("play")
+var section = document.getElementById("caja-coo-p")
 var coordenadas = document.getElementById("coo")
 var start = document.getElementById("jugar");
-var divT = document.createElement("div")
-divT.classList.add("el-tablero")
-var cuadro = document.createElement("div")
-cuadro.classList.add("cuadrito")
+var divT = document.createElement("div");
+divT.classList.add("el-tablero");
+var cuadro = document.createElement("div");
+cuadro.classList.add("cuadrito");
+
 start.addEventListener("click", function(){
 
-coordenadas.remove(start)
-divT.add(start)
-cuadrito.appendChild(divT)
-divT.appendChild(section)
+coordenadas.remove(start);
+
 });
 
+tablero.appendChild(cuadro);
+cuadro.appendChild(divT);
+divT.appendChild(section);
+}
+cambiar();
+
+/*Lo que quise hacer aqui: llamar mi div que contenia los input de las coordenadas,
+llamar a mi div de las coordenadas y el boton de start,
+crear un nuevo div que sería dnd se ubicaria la nueva caja y darle clase
+y crear otro div dnd se dibuja el cuadro.
+Al hacer click al boton start, borrar el div de las coordenadas y agregar el div del tablero.
+puse la var tablero como hijo del cuadrito y el cuadrito como hijo del nuevo div 
+y ese div ponerlo como hijo del div que antes contenia las coordenadas para que esa sea su ubicación.
+*/

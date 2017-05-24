@@ -32,7 +32,7 @@ nav{
 .logo img{ 
 	width: 70px;
 	max-width: 20%;
-	margin: 0 0 0 200px;
+	margin: 0 0 0 100px;
 	padding: 10px;
 }
 /*
@@ -147,6 +147,15 @@ li a:hover:not(.active){
 	color: #75726C;
 }
 
+.link{
+	text-decoration: none;
+	color: #404040;
+}
+
+.link:hover:not(.active){
+	text-decoration: underline;
+}
+
 .playwl{
 	margin-top: 20px;
 	font-size: 60px;
@@ -156,7 +165,7 @@ li a:hover:not(.active){
 }
 
 .play-with{
-	margin-top: 50px;
+	margin-top: 60px;
 	padding-top: 1px;
 	padding-bottom: 3px;
 	background-color: #EDE9E2;
@@ -210,7 +219,23 @@ li a:hover:not(.active){
 .start{
 	font-size: 20px;
 }
+/*
+#tablero{
+  border: 5px solid #900C3F;
+}
 
+.cuadrito{
+  box-sizing: border-box;
+  float:left;
+  background-color: #581845;
+  color: whitesmoke;
+  padding: 10px;
+  font-family: sans-serif;
+  width: 10%;
+  text-align: center;
+  border: 5px #900C3F solid;
+}
+*/
 footer{
 	color: #EDE9E2;
 	background-color: #75726C;
